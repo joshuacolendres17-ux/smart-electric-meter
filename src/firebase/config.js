@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAfL-UzXmdn6AkEdlH8KFiNCVO3DZ4tjBg",
@@ -14,5 +15,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-export const rtdb = getDatabase(app);   // Realtime Database — live ESP32 sensor data
-export const db = getFirestore(app);    // Firestore — billing, alerts, historical logs
+export const rtdb = getDatabase(app);
+export const db = getFirestore(app);
+export const auth = getAuth(app);
