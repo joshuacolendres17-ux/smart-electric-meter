@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-panel: #12161c;
+  --color-panel-light: #1a1f27;
+  --color-bg: #0a0d12;
+  --color-copper: #d9a441;
+  --color-copper-dim: #8a6a2c;
+  --color-safety-red: #e5484d;
+  --color-safety-green: #4ade80;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: 'Inter', sans-serif;
+}
