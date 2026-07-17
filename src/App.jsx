@@ -9,9 +9,9 @@ import Settings from "./pages/Settings";
 
 function App() {
   return (
-    <div className="flex min-h-screen bg-bg">
+    <div className="md:flex min-h-screen bg-bg">
       <Sidebar />
-      <main className="flex-1 p-8">
+      <main className="flex-1 p-4 md:p-8">
         <Routes>
           <Route path="/" element={<Overview />} />
           <Route path="/monitoring" element={<Monitoring />} />

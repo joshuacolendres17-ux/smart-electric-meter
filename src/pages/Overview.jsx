@@ -57,7 +57,7 @@ function Overview() {
         </div>
       )}
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8">
         <MeterCard label="Voltage" value={data.voltage} unit="V" status="normal" />
         <MeterCard label="Current" value={data.current} unit="A" status="normal" />
         <MeterCard label="Power" value={data.power} unit="W" status="normal" />
